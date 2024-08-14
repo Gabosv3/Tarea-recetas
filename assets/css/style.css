@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* --- Container ---*/
+
+.Container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+}
+
+/* --- Header ---*/
+
+.Container > .Header {
+  
+  height: 50vh;
+}
+
+.Container .Header .Header-Title {
+  text-align: center;
+  margin-top: 2vh;
+}
+
+.Container .Header .Header-Title h1 {
+  font-family: "Inclusive Sans", sans-serif;
+  font-style: normal;
+  font-size: 1.3em;
+}
+
+/* --- Efecto  ---*/
+
+.Container .Header .Header-Title h1:hover {
+  color: #efb810;
+  font-size: 1.6em;
+  transition: 0.5s;
+}
+
+/* --- Img Logo ---*/
+
+.Container .Header .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: 40vh;
+}
+
+.Container .Header .img-container .img-logo {
+  width: 100%;
+  height: 35vh;
+  border-radius: 2vh;
+  object-fit: cover; 
+}
+
+/* --- Contenedor Tiempos  ---*/
+main .Container-Time {
+  display: grid;
+  padding: 0.3vw ;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+
+/* --- card  ---*/
+
+main .Container-Time .Box-Time .Card{
+    padding: 3vh;
+    background-color:rgb(240, 238, 238) ;
+    border-radius: 1.2vh;
+}
+
+main .Container-Time .Box-Time .Card .Card-Text  {
+    padding:  1.0rem 0;
+}
+
+
+.Container-main .card .Card-Title{
+  padding:  1.2rem 0;
+}
+
+.Container-main .card .Card-Text p{
+  font-size:  1.0rem;
+}
+
+
+.mb{
+  margin-bottom: 1.2rem;
+}
+
+.text-low-contrast {
+  color: rgba(0, 0, 0, 0.5); /* Reduce la opacidad del color negro al 50% */
+}
+
+/* --- Estilos Responsivos ---*/
+
+
+/*Tablet*/
+@media (min-width: 576px) and (max-width: 991.98px)  {
+  .Container {
+    width: 80vw;
+  }
+
+  .Container .Header .img-container {
+    width: 80vw;
+  }
+}
+
+/*fin tablet*/
+
+/*movil*/
+
+@media (max-width: 575.99px) {
+  .Container {
+    width: 90vw;
+  }
+
+  .Container .Header .img-container {
+    width: 90vw;
+  }
+
+  main .Container-Time {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Fin movil*/
+
